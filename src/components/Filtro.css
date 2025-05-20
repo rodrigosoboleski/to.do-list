@@ -1,0 +1,29 @@
+/* Estiliza o contêiner dos botões de filtro */
+.filtro {
+  display: flex; /* Alinha os botões na mesma linha */
+  gap: 10px; /* Espaço entre botões */
+  justify-content: center; /* Centraliza os botões */
+  margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Estiliza cada botão de filtro */
+.filtro-botao {
+  padding: 8px 16px; /* Espaço interno */
+  background-color: #e9ecef; /* Fundo cinza claro */
+  color: #333; /* Texto cinza escuro */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estiliza o botão quando está ativo (selecionado) */
+.filtro-botao.ativo {
+  background-color: #007bff; /* Fundo azul */
+  color: white; /* Texto branco */
+}
+
+/* Efeito hover no botão (quando não está ativo) */
+.filtro-botao:hover:not(.ativo) {
+  background-color: #d3d7db; /* Cinza um pouco mais escuro */
+}

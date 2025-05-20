@@ -1,0 +1,52 @@
+/* Estiliza cada item da lista de tarefas */
+.tarefa {
+  display: flex; /* Alinha texto e botões na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre texto e botões */
+  padding: 10px; /* Espaço interno */
+  background-color: #f9f9f9; /* Fundo cinza claro */
+  color: black;
+  margin-bottom: 8px; /* Espaço entre tarefas */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estiliza o texto da tarefa */
+.tarefa-texto {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+/* Estiliza o texto quando a tarefa está concluída */
+.tarefa-texto.concluida {
+  text-decoration: line-through; /* Risca o texto */
+}
+
+/* Estiliza os botões (Concluir/Desmarcar e Remover) */
+.tarefa-botao {
+  padding: 5px 10px; /* Espaço interno */
+  font-size: 14px; /* Tamanho da fonte */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+}
+
+/* Estiliza o botão Concluir/Desmarcar */
+.tarefa-botao.concluir {
+  background-color: #28a745; /* Verde */
+  color: white; /* Texto branco */
+}
+
+/* Efeito hover no botão Concluir/Desmarcar */
+.tarefa-botao.concluir:hover {
+  background-color: #218838; /* Verde escuro */
+}
+
+/* Estiliza o botão Remover */
+.tarefa-botao.remover {
+  background-color: #dc3545; /* Vermelho */
+  color: white; /* Texto branco */
+}
+
+/* Efeito hover no botão Remover */
+.tarefa-botao.remover:hover {
+  background-color: #c82333; /* Vermelho escuro */
+}
